@@ -16,7 +16,9 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'  # Use Node.js version 16
+        node-version: '12'  # Use Node.js version 12
+      env:
+        ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # Allow the use of Node.js version 12
 
     - name: Install dependencies
       run: npm install
