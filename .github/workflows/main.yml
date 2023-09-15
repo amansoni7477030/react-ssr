@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '12'  # Use Node.js version 12
+        node-version: '14'  # Use Node.js version 14
       env:
         ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # Allow the use of Node.js version 12
 
